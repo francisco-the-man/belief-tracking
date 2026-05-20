@@ -35,7 +35,7 @@ export HUGGINGFACE_HUB_CACHE="${HF_HOME}/hub"
 export TRANSFORMERS_CACHE="${HF_HOME}"   # legacy compat
 mkdir -p "${HF_HOME}" logs
 
-EXPERIMENT="${EXPERIMENT:?must set EXPERIMENT=answer_lookback-{pointer,payload}}"
+EXPERIMENT="${EXPERIMENT:?must set EXPERIMENT to answer_lookback-pointer or answer_lookback-payload}"
 MODEL_KEY="${MODEL_KEY:-Qwen/Qwen2.5-14B-Instruct}"
 TRAIN_SIZE="${TRAIN_SIZE:-80}"
 VALID_SIZE="${VALID_SIZE:-80}"
