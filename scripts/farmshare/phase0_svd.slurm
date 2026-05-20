@@ -34,7 +34,11 @@ else
     exit 1
 fi
 
-mkdir -p logs additionals
+# Redirect HuggingFace cache to scratch — SLURM jobs don't source ~/.bashrc.
+export HF_HOME="/scratch/users/${USER}/hf_cache"
+export HUGGINGFACE_HUB_CACHE="${HF_HOME}/hub"
+export TRANSFORMERS_CACHE="${HF_HOME}"
+mkdir -p "${HF_HOME}" logs additionals
 
 EXPERIMENT="${EXPERIMENT:-both}"
 MODEL_KEY="${MODEL_KEY:-Qwen/Qwen2.5-14B-Instruct}"

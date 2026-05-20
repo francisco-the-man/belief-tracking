@@ -29,7 +29,11 @@ else
     exit 1
 fi
 
-mkdir -p logs
+# Redirect HuggingFace cache to scratch — SLURM jobs don't source ~/.bashrc.
+export HF_HOME="/scratch/users/${USER}/hf_cache"
+export HUGGINGFACE_HUB_CACHE="${HF_HOME}/hub"
+export TRANSFORMERS_CACHE="${HF_HOME}"   # legacy compat
+mkdir -p "${HF_HOME}" logs
 
 EXPERIMENT="${EXPERIMENT:?must set EXPERIMENT=answer_lookback-{pointer,payload}}"
 MODEL_KEY="${MODEL_KEY:-Qwen/Qwen2.5-14B-Instruct}"
@@ -39,7 +43,9 @@ BATCH_SIZE="${BATCH_SIZE:-4}"
 LR="${LR:-0.1}"
 LAMB="${LAMB:-0.1}"
 N_EPOCHS="${N_EPOCHS:-1}"
-SAVE_PATH="${SAVE_PATH:-results/causalToM_novis/}"
+# Save to our_repro to avoid overwriting the paper authors' reference Qwen-14B
+# results that ship with the fork (under results/causalToM_novis/).
+SAVE_PATH="${SAVE_PATH:-results/our_repro/causalToM_novis/}"
 
 echo "----------------------------------------"
 echo "Node:        $(hostname)"
