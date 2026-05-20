@@ -186,8 +186,11 @@ def main(
 
     # We want all `n_samples` examples in a single pool — pass them all as
     # train_size with valid_size=0 so prepare_dataset doesn't split them.
-    is_70b = "Meta-Llama-3-70B-Instruct" in model_key
-    dtype = torch.float16 if is_70b else torch.float32
+    # NOTE: The paper used fp32 for Qwen-14B on 80GB A100s. On L40S (48GB)
+    # fp32 doesn't fit — we use fp16 universally for ≤70B models. SVD bases
+    # are robust to fp16 numerics.
+    is_405b = "405B" in model_key
+    dtype = torch.bfloat16 if is_405b else torch.float16  # 405B handled separately
 
     lm = LanguageModel(
         model_key,

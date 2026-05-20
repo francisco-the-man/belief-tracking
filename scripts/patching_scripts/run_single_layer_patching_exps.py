@@ -741,10 +741,12 @@ def main(
     if remote:
         lm = LanguageModel("meta-llama/Meta-Llama-3.1-405B-Instruct")
     else:
+        # NOTE: paper used fp32 for Qwen-14B on 80 GB A100s. On L40S (48 GB)
+        # fp32 doesn't fit — use fp16 for all non-405B models.
         lm = LanguageModel(
             model_key,
             device_map="auto",
-            dtype=torch.float16 if "meta-llama/Meta-Llama-3-70B-Instruct" in model_key else torch.float32,
+            dtype=torch.float16,
             dispatch=True,
         )
 

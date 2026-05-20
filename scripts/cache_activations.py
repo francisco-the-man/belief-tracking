@@ -164,8 +164,8 @@ def main(
         list(neg_positions) if neg_positions is not None else list(DEFAULT_NEG_POSITIONS)
     )
 
-    is_70b = "Meta-Llama-3-70B-Instruct" in model_key
-    dtype = torch.float16 if is_70b else torch.float32
+    # Use fp16 universally; L40S (48 GB) can't fit ≤70B in fp32.
+    dtype = torch.float16
 
     lm = LanguageModel(
         model_key,
