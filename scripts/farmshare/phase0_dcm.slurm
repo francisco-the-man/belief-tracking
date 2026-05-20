@@ -1,7 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=lb_dcm
-#SBATCH --partition=long
-#SBATCH --qos=gpu
+#SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G

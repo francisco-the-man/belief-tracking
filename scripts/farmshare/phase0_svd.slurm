@@ -1,7 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=lb_svd
-#SBATCH --partition=normal
-#SBATCH --qos=gpu
+#SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G
