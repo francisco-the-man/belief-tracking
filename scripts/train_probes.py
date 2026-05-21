@@ -168,6 +168,10 @@ def main(
                 X = torch.load(tp).to(torch.float32).numpy()[keep_idx]
                 var_results[t_key][str(layer)] = _probe(X, y, seed=seed)
         results[var_name] = var_results
+        # save partial after each variable so a walltime kill doesn't lose everything
+        os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
+        with open(out_path, "w") as f:
+            json.dump(results, f, indent=2)
 
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w") as f:

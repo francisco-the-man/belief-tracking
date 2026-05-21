@@ -3,7 +3,7 @@
 #SBATCH --partition=normal
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
-#SBATCH --time=01:00:00
+#SBATCH --time=05:00:00
 #SBATCH --output=logs/phase2_probe_%x_%j.out
 #SBATCH --error=logs/phase2_probe_%x_%j.err
 
