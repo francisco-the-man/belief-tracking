@@ -1,0 +1,88 @@
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files:   0%|          | 0/8 [00:18<?, ?it/s]
+Traceback (most recent call last):
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_single_layer_patching_exps.py", line 786, in <module>
+    fire.Fire(main)
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_single_layer_patching_exps.py", line 746, in main
+    lm = LanguageModel(
+         ^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/nnsight/modeling/language.py", line 103, in __init__
+    super().__init__(*args, **kwargs)
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/nnsight/modeling/mixins/meta.py", line 22, in __init__
+    super().__init__(*args, **kwargs)
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/nnsight/modeling/mixins/loadable.py", line 14, in __init__
+    model = self._load(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/nnsight/modeling/language.py", line 175, in _load
+    model = self.automodel.from_pretrained(repo_id, config=self.config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4900, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 1200, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 1084, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+                       ^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 567, in cached_files
+    raise e
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 494, in cached_files
+    snapshot_download(
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 332, in snapshot_download
+    thread_map(
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 306, in _inner_hf_hub_download
+    return hf_hub_download(
+           ^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1171, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1723, in _download_to_tmp_and_move
+    xet_get(
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 629, in xet_get
+    download_files(
+RuntimeError: Data processing error: CAS service error : IO Error: Disk quota exceeded (os error 122)

@@ -1,0 +1,24 @@
+/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:04<00:32,  4.60s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:08<00:26,  4.40s/it]Loading checkpoint shards:  38%|███▊      | 3/8 [00:13<00:21,  4.32s/it]Loading checkpoint shards:  50%|█████     | 4/8 [00:17<00:17,  4.26s/it]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:21<00:12,  4.13s/it]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:25<00:08,  4.05s/it]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:28<00:03,  3.98s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:30<00:00,  3.23s/it]Loading checkpoint shards: 100%|██████████| 8/8 [00:30<00:00,  3.81s/it]
+Traceback (most recent call last):
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_single_layer_patching_exps.py", line 786, in <module>
+    fire.Fire(main)
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+                                ^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/.venv/lib/python3.12/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_single_layer_patching_exps.py", line 766, in main
+    run_experiment(
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_single_layer_patching_exps.py", line 477, in run_experiment
+    train_dataloader, valid_dataloader = prepare_dataset(
+                                         ^^^^^^^^^^^^^^^^
+  File "/scratch/users/averylou/lookbacks-rep-testing/scripts/patching_scripts/run_patching_exp_utils.py", line 445, in prepare_dataset
+    dataset = exp_to_ds_func_map[experiment_name](
+              ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'answer_lookback-payload}'

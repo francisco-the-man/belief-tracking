@@ -106,7 +106,7 @@ def validate(
             with lm.session(remote=remote) as session:
                 with lm.trace(alt_prompts[0]):
                     for t in intervention_positions["cache"]:
-                        alt_acts[t] = lm.model.layers[layer_idx].output[0][:, t].clone()
+                        alt_acts[t] = lm.model.layers[layer_idx].output[:, t].clone()
 
                 with lm.generate(
                     org_prompts[0],
@@ -117,7 +117,7 @@ def validate(
                     eos_token_id=lm.tokenizer.eos_token_id,
                 ):
                     for t in intervention_positions["patch"]:
-                        curr_output = lm.model.layers[layer_idx].output[0][:, t].clone()
+                        curr_output = lm.model.layers[layer_idx].output[:, t].clone()
                         if projection is not None:
                             if isinstance(projection, dict):
                                 if t in query_object_indices:
@@ -139,7 +139,7 @@ def validate(
                         else:
                             patch = alt_acts[patch_to_cache_map[t]]
 
-                        lm.model.layers[layer_idx].output[0][:, t] = patch
+                        lm.model.layers[layer_idx].output[:, t] = patch
 
                     out = lm.generator.output.save()
 
@@ -330,7 +330,7 @@ def get_low_rank_projection(
             with lm.trace() as tracer:
                 with tracer.invoke(alt_prompts):
                     for t in intervention_positions["cache"]:
-                        alt_acts[t] = lm.model.layers[layer_idx].output[0][:, t].clone()
+                        alt_acts[t] = lm.model.layers[layer_idx].output[:, t].clone()
 
                 with tracer.invoke(org_prompts):
                     for t in intervention_positions["patch"]:
@@ -344,10 +344,10 @@ def get_low_rank_projection(
                             else:
                                 raise ValueError("Invalid projection type")
 
-                        curr_output = lm.model.layers[layer_idx].output[0][:, t].clone()
+                        curr_output = lm.model.layers[layer_idx].output[:, t].clone()
                         alt_proj = torch.matmul(alt_acts[patch_to_cache_map[t]], proj)
                         org_proj = torch.matmul(curr_output, proj)
-                        lm.model.layers[layer_idx].output[0][:, t] = (
+                        lm.model.layers[layer_idx].output[:, t] = (
                             curr_output - org_proj + alt_proj
                         )
 
