@@ -288,9 +288,12 @@ def get_low_rank_projection(
                 batch["target"] if "target" in batch else batch["counterfactual_target"]
             )
             if not bigtom:
-                target_tokens = lm.tokenizer(targets, return_tensors="pt").input_ids[
-                    :, -1
-                ]
+                target_tokens = lm.tokenizer(
+                    targets,
+                    return_tensors="pt",
+                    padding=True,
+                    padding_side="left",
+                ).input_ids[:, -1]
             else:
                 target_tokens = lm.tokenizer(targets, return_tensors="pt").input_ids[
                     :, 1:

@@ -33,13 +33,15 @@ fi
 export HF_HOME="/scratch/users/${USER}/hf_cache"
 export HUGGINGFACE_HUB_CACHE="${HF_HOME}/hub"
 export TRANSFORMERS_CACHE="${HF_HOME}"   # legacy compat
+# Reduce CUDA fragmentation — DCM training is right at the L40S 48GB limit.
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 mkdir -p "${HF_HOME}" logs
 
 EXPERIMENT="${EXPERIMENT:?must set EXPERIMENT to answer_lookback-pointer or answer_lookback-payload}"
 MODEL_KEY="${MODEL_KEY:-Qwen/Qwen2.5-14B-Instruct}"
 TRAIN_SIZE="${TRAIN_SIZE:-80}"
 VALID_SIZE="${VALID_SIZE:-80}"
-BATCH_SIZE="${BATCH_SIZE:-4}"
+BATCH_SIZE="${BATCH_SIZE:-1}"
 LR="${LR:-0.1}"
 LAMB="${LAMB:-0.1}"
 N_EPOCHS="${N_EPOCHS:-1}"
