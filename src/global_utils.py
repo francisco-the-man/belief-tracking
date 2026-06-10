@@ -41,15 +41,20 @@ Other defaults are set to:
 
 
 def load_env_var(var: str) -> Union[str, None]:
+    env_value = os.environ.get(var)
+    if env_value:
+        return env_value
+
     try:
         with open(os.path.join(PROJECT_ROOT, "env.yml"), "r") as f:
-            config = yaml.safe_load(f)
+            config = yaml.safe_load(f) or {}
     except FileNotFoundError:
         logger.error(f"""env.yml not found in {PROJECT_ROOT}!""")
+        return ""
 
     if var not in config or config[var] is None or config[var] == "":
         logger.error(f"{var} not set in env.yml!")
-        return None
+        return ""
 
     else:
         return config[var]

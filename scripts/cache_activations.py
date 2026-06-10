@@ -137,7 +137,7 @@ def _cache_batch(
             for layer in layers:
                 for t in neg_positions:
                     saved[layer][t] = (
-                        lm.model.layers[layer].output[:, t].clone().save()
+                        lm.model.layers[layer].output[0][:, t].clone().save()
                     )
 
     out: dict[int, dict[int, torch.Tensor]] = {layer: {} for layer in layers}
@@ -170,7 +170,7 @@ def main(
     lm = LanguageModel(
         model_key,
         device_map="auto",
-        dtype=dtype,
+        torch_dtype=dtype,
         dispatch=True,
     )
     lm.tokenizer.padding_side = "left"

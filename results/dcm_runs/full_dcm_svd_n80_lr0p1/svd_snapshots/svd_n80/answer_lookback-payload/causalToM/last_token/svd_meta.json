@@ -1,0 +1,164 @@
+{
+  "experiment": "answer_lookback-payload",
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "vector_type": "last_token",
+  "n_samples": 80,
+  "token_positions": [
+    -1
+  ],
+  "layers": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    47
+  ],
+  "seed": 10,
+  "per_layer": {
+    "0": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "2": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "4": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "6": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "8": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "10": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "12": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "14": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "16": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "18": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "20": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "22": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "24": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "26": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "28": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "30": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "32": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "34": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "36": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "38": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "40": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "42": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "44": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "46": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    },
+    "47": {
+      "n_directions": 160,
+      "hidden_dim": 5120,
+      "input_rows": 160
+    }
+  }
+}

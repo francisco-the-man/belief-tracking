@@ -105,14 +105,14 @@ def _collect_residuals(
                 for layer in layers:
                     for t in token_positions:
                         saved_clean[layer][t] = (
-                            lm.model.layers[layer].output[:, t].clone().save()
+                            lm.model.layers[layer].output[0][:, t].clone().save()
                         )
 
             with tracer.invoke(cf_prompts):
                 for layer in layers:
                     for t in token_positions:
                         saved_cf[layer][t] = (
-                            lm.model.layers[layer].output[:, t].clone().save()
+                            lm.model.layers[layer].output[0][:, t].clone().save()
                         )
 
         for layer in layers:
@@ -195,7 +195,7 @@ def main(
     lm = LanguageModel(
         model_key,
         device_map="auto",
-        dtype=dtype,
+        torch_dtype=dtype,
         dispatch=True,
     )
 

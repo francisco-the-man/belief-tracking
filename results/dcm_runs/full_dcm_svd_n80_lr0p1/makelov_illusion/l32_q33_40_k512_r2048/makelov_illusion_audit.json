@@ -1,0 +1,104 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "experiment": "answer_lookback-pointer",
+  "layer": 32,
+  "construction_size": 80,
+  "validation_size": 80,
+  "probe_samples": 500,
+  "batch_size": 4,
+  "probe_batch_size": 8,
+  "seed": 0,
+  "probe_seed": 0,
+  "direction_stats": {
+    "q_layers": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "kernel_dim": 512,
+    "rowspace_dim": 2048,
+    "eig_min": 0.12891964614391327,
+    "eig_kernel_max": 5.986900329589844,
+    "eig_rowspace_min": 14.979124069213867,
+    "eig_max": 204.34039306640625,
+    "cos_disc_dorm": 1.862645149230957e-09,
+    "diff_rms_disc": 19.410158157348633,
+    "diff_rms_dorm": 7.344262371589139e-07,
+    "diff_rms_plus": 13.725054740905762,
+    "diff_rms_minus": 13.725053787231445,
+    "q_energy_disc": 1.9512919187545776,
+    "q_energy_dorm": 13.130914688110352,
+    "q_energy_plus": 9.386917114257812,
+    "q_energy_minus": 9.386917114257812
+  },
+  "patch_rows": [
+    {
+      "variant": "plus",
+      "full_iia": 1.0,
+      "illusory_iia": 0.0125,
+      "complement_iia": 1.0
+    },
+    {
+      "variant": "minus",
+      "full_iia": 1.0,
+      "illusory_iia": 0.0125,
+      "complement_iia": 1.0
+    }
+  ],
+  "probe_rows": [
+    {
+      "variant": "plus",
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      }
+    },
+    {
+      "variant": "minus",
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      }
+    }
+  ],
+  "directions_path": "/vol/results/makelov_illusion/l32_q33_40_k512_r2048/directions.pt"
+}

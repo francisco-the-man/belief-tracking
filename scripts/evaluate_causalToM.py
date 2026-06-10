@@ -202,7 +202,7 @@ def main():
         model = LanguageModel(
             args.model,
             device_map="auto",
-            dtype=torch.float16 if "Meta-Llama-3-70B-Instruct" in args.model else torch.float32,
+            torch_dtype=torch.float16 if "Meta-Llama-3-70B-Instruct" in args.model else torch.float32,
             dispatch=True,
         )
     print("Model loaded successfully\n")
@@ -276,4 +276,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

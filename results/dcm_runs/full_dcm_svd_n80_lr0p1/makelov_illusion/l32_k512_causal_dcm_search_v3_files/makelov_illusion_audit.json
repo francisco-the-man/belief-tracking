@@ -1,0 +1,128 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "experiment": "answer_lookback-pointer",
+  "layer": 32,
+  "construction_size": 80,
+  "validation_size": 80,
+  "probe_samples": 500,
+  "dormant_mode": "causal_dcm_search",
+  "source_svd_tag": "svd_n80",
+  "pointer_result_tag": "full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02",
+  "search_candidates": 48,
+  "search_examples": 32,
+  "candidate_batch_size": 1,
+  "search_diff_penalty": 0.0,
+  "batch_size": 2,
+  "probe_batch_size": 4,
+  "seed": 0,
+  "probe_seed": 0,
+  "direction_stats": {
+    "q_layers": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "kernel_dim": 512,
+    "rowspace_dim": 2048,
+    "dormant_mode": "causal_dcm_search",
+    "source_svd_tag": "svd_n80",
+    "pointer_result_tag": "full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02",
+    "eig_min": 0.12891964614391327,
+    "eig_kernel_max": 5.986900329589844,
+    "eig_rowspace_min": 14.979124069213867,
+    "eig_max": 204.34039306640625,
+    "cos_disc_dorm": 3.725290298461914e-09,
+    "diff_rms_disc": 19.410158157348633,
+    "diff_rms_dorm": 48.95843505859375,
+    "diff_rms_plus": 48.33645248413086,
+    "diff_rms_minus": 20.91100311279297,
+    "q_energy_disc": 1.9512919187545776,
+    "q_energy_dorm": 6.142262935638428,
+    "q_energy_plus": 4.556828498840332,
+    "q_energy_minus": 4.557438850402832,
+    "search_candidates_requested": 48,
+    "search_candidates_evaluated": 48,
+    "search_vectors_evaluated": 96,
+    "search_examples": 32,
+    "candidate_batch_size": 1,
+    "search_diff_penalty": 0.0,
+    "search_best_index": 0,
+    "search_best_candidate_index": 0,
+    "search_best_variant": "plus",
+    "search_best_acc": 0.65625,
+    "search_best_margin": 1.72802734375,
+    "search_best_score": 0.6735302805900574,
+    "search_best_candidate_diff_rms": 48.958431243896484,
+    "dcm_rank": 11
+  },
+  "patch_rows": [
+    {
+      "variant": "plus",
+      "full_iia": 1.0,
+      "illusory_iia": 0.7625,
+      "complement_iia": 0.0375
+    },
+    {
+      "variant": "minus",
+      "full_iia": 1.0,
+      "illusory_iia": 0.0125,
+      "complement_iia": 0.9875
+    }
+  ],
+  "probe_rows": [
+    {
+      "variant": "plus",
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      }
+    },
+    {
+      "variant": "minus",
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      }
+    }
+  ],
+  "directions_path": "/vol/results/makelov_illusion/l32_k512_causal_dcm_search_v3/directions.pt"
+}

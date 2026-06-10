@@ -1,0 +1,920 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "source_svd_tag": "svd_n80",
+  "pointer_result_tag": "full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02",
+  "payload_result_tag": "full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1",
+  "pointer_layers": [
+    30,
+    32,
+    34,
+    36,
+    38,
+    40
+  ],
+  "payload_layers": [
+    40,
+    42,
+    44,
+    46,
+    47
+  ],
+  "n_samples": 400,
+  "batch_size": 4,
+  "seed": 42,
+  "position": -1,
+  "feature_meta": [
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 30,
+      "rank": 40,
+      "dcm_subspace_acc": 0.3875,
+      "dcm_full_rank_acc": 0.4,
+      "feature_prefix": "pointer_L30",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/30.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/30.pt"
+    },
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 32,
+      "rank": 11,
+      "dcm_subspace_acc": 0.9875,
+      "dcm_full_rank_acc": 0.9875,
+      "feature_prefix": "pointer_L32",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/32.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/32.pt"
+    },
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 34,
+      "rank": 14,
+      "dcm_subspace_acc": 0.9875,
+      "dcm_full_rank_acc": 0.9875,
+      "feature_prefix": "pointer_L34",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/34.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/34.pt"
+    },
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 36,
+      "rank": 37,
+      "dcm_subspace_acc": 0.8125,
+      "dcm_full_rank_acc": 0.9,
+      "feature_prefix": "pointer_L36",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/36.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/36.pt"
+    },
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 38,
+      "rank": 39,
+      "dcm_subspace_acc": 0.3625,
+      "dcm_full_rank_acc": 0.375,
+      "feature_prefix": "pointer_L38",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/38.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/38.pt"
+    },
+    {
+      "feature_set": "pointer",
+      "experiment": "answer_lookback-pointer",
+      "layer": 40,
+      "rank": 51,
+      "dcm_subspace_acc": 0.1625,
+      "dcm_full_rank_acc": 0.2,
+      "feature_prefix": "pointer_L40",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p02/lamb_0p02/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "feature_set": "payload",
+      "experiment": "answer_lookback-payload",
+      "layer": 40,
+      "rank": 28,
+      "dcm_subspace_acc": 0.2875,
+      "dcm_full_rank_acc": 0.3875,
+      "feature_prefix": "payload_L40",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "feature_set": "payload",
+      "experiment": "answer_lookback-payload",
+      "layer": 42,
+      "rank": 26,
+      "dcm_subspace_acc": 0.65,
+      "dcm_full_rank_acc": 0.8625,
+      "feature_prefix": "payload_L42",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "feature_set": "payload",
+      "experiment": "answer_lookback-payload",
+      "layer": 44,
+      "rank": 26,
+      "dcm_subspace_acc": 0.85,
+      "dcm_full_rank_acc": 0.975,
+      "feature_prefix": "payload_L44",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "feature_set": "payload",
+      "experiment": "answer_lookback-payload",
+      "layer": 46,
+      "rank": 32,
+      "dcm_subspace_acc": 0.95,
+      "dcm_full_rank_acc": 1.0,
+      "feature_prefix": "payload_L46",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "feature_set": "payload",
+      "experiment": "answer_lookback-payload",
+      "layer": 47,
+      "rank": 38,
+      "dcm_subspace_acc": 0.6125,
+      "dcm_full_rank_acc": 1.0,
+      "feature_prefix": "payload_L47",
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/47.pt"
+    }
+  ],
+  "analyses": {
+    "pointer": {
+      "n_samples": 400,
+      "n_features": 192,
+      "pca_components": 10,
+      "explained_variance_ratio": [
+        0.3578266501426697,
+        0.051053255796432495,
+        0.03598867729306221,
+        0.030754610896110535,
+        0.030110731720924377,
+        0.026223769411444664,
+        0.022905098274350166,
+        0.020811336115002632,
+        0.01943708397448063,
+        0.018502192571759224
+      ],
+      "k_sweep": [
+        {
+          "k": 2,
+          "silhouette": 0.49750426411628723,
+          "ami": {
+            "char_idx": -0.0008708456847273141,
+            "obj_idx": 0.0007432275629375597,
+            "query_pair": 0.5567917920880712,
+            "is_unknown": 0.8243624761761903,
+            "state_idx": 0.6579160550385805
+          }
+        },
+        {
+          "k": 3,
+          "silhouette": 0.38225701451301575,
+          "ami": {
+            "char_idx": 0.27352425932703806,
+            "obj_idx": 0.2748268773890006,
+            "query_pair": 0.6772825151818528,
+            "is_unknown": 0.6689677102798174,
+            "state_idx": 0.5540638586528625
+          }
+        },
+        {
+          "k": 4,
+          "silhouette": 0.26335904002189636,
+          "ami": {
+            "char_idx": 0.5624831162301587,
+            "obj_idx": 0.4606486533648033,
+            "query_pair": 0.8402023326740641,
+            "is_unknown": 0.5568892533187335,
+            "state_idx": 0.7526512509842879
+          }
+        },
+        {
+          "k": 5,
+          "silhouette": 0.28275030851364136,
+          "ami": {
+            "char_idx": 0.5176514950349919,
+            "obj_idx": 0.4225686760995544,
+            "query_pair": 0.7965032750516658,
+            "is_unknown": 0.52992314842853,
+            "state_idx": 0.7017715931245926
+          }
+        },
+        {
+          "k": 6,
+          "silhouette": 0.2822647988796234,
+          "ami": {
+            "char_idx": 0.43130523033099216,
+            "obj_idx": 0.4196473977489714,
+            "query_pair": 0.7504920997626446,
+            "is_unknown": 0.532578121974904,
+            "state_idx": 0.6622173403309836
+          }
+        },
+        {
+          "k": 7,
+          "silhouette": 0.299947053194046,
+          "ami": {
+            "char_idx": 0.39887697062040584,
+            "obj_idx": 0.38917318984867705,
+            "query_pair": 0.7199759440718762,
+            "is_unknown": 0.5212826603885066,
+            "state_idx": 0.6351496195977455
+          }
+        },
+        {
+          "k": 8,
+          "silhouette": 0.30398446321487427,
+          "ami": {
+            "char_idx": 0.36537308527261464,
+            "obj_idx": 0.3626165359261795,
+            "query_pair": 0.6861690407225557,
+            "is_unknown": 0.5013085116085088,
+            "state_idx": 0.5963215758079837
+          }
+        }
+      ],
+      "best_k": 2,
+      "best_silhouette": 0.49750426411628723,
+      "best_cluster_ami": {
+        "char_idx": -0.0008708456847273141,
+        "obj_idx": 0.0007432275629375597,
+        "query_pair": 0.5567917920880712,
+        "is_unknown": 0.8243624761761903,
+        "state_idx": 0.6579160550385805
+      },
+      "clusters": [
+        {
+          "cluster": 0,
+          "n": 186,
+          "distributions": {
+            "char_idx": {
+              "1": 98,
+              "0": 88
+            },
+            "obj_idx": {
+              "0": 98,
+              "1": 88
+            },
+            "query_pair": {
+              "2": 98,
+              "1": 88
+            },
+            "is_unknown": {
+              "1": 186
+            },
+            "state_idx": {
+              "-1": 186
+            },
+            "target_state": {
+              "unknown": 186
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 5,
+              "question": "What does Oscar believe the cup contains?",
+              "queried_character": "Oscar",
+              "queried_object": "cup",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 7,
+              "question": "What does Carl believe the flask contains?",
+              "queried_character": "Carl",
+              "queried_object": "flask",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 10,
+              "question": "What does Grace believe the can contains?",
+              "queried_character": "Grace",
+              "queried_object": "can",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 14,
+              "question": "What does Rose believe the quart contains?",
+              "queried_character": "Rose",
+              "queried_object": "quart",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 15,
+              "question": "What does Lee believe the glass contains?",
+              "queried_character": "Lee",
+              "queried_object": "glass",
+              "target_state": "unknown"
+            }
+          ]
+        },
+        {
+          "cluster": 1,
+          "n": 214,
+          "distributions": {
+            "char_idx": {
+              "0": 109,
+              "1": 105
+            },
+            "obj_idx": {
+              "1": 114,
+              "0": 100
+            },
+            "query_pair": {
+              "3": 103,
+              "0": 98,
+              "1": 11,
+              "2": 2
+            },
+            "is_unknown": {
+              "0": 201,
+              "1": 13
+            },
+            "state_idx": {
+              "1": 103,
+              "0": 98,
+              "-1": 13
+            },
+            "target_state": {
+              "wine": 15,
+              "beer": 13,
+              "unknown": 13,
+              "champagne": 12,
+              "stout": 12,
+              "monster": 11,
+              "bourbon": 11,
+              "cocoa": 10,
+              "sprite": 10,
+              "float": 9
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 0,
+              "question": "What does Charlie believe the jar contains?",
+              "queried_character": "Charlie",
+              "queried_object": "jar",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 1,
+              "question": "What does Heidi believe the cup contains?",
+              "queried_character": "Heidi",
+              "queried_object": "cup",
+              "target_state": "tea"
+            },
+            {
+              "sample_idx": 2,
+              "question": "What does Anna believe the tank contains?",
+              "queried_character": "Anna",
+              "queried_object": "tank",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 3,
+              "question": "What does Dean believe the pitcher contains?",
+              "queried_character": "Dean",
+              "queried_object": "pitcher",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 4,
+              "question": "What does Kevin believe the mug contains?",
+              "queried_character": "Kevin",
+              "queried_object": "mug",
+              "target_state": "beer"
+            }
+          ]
+        }
+      ],
+      "paths": {
+        "features": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/pointer/dcm_features.npy",
+        "pca_points": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/pointer/pca_points.csv",
+        "cluster_assignments": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/pointer/cluster_assignments.csv",
+        "plot": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/pointer/pca_clusters.png"
+      }
+    },
+    "payload": {
+      "n_samples": 400,
+      "n_features": 150,
+      "pca_components": 10,
+      "explained_variance_ratio": [
+        0.07156574726104736,
+        0.06123843044042587,
+        0.057203710079193115,
+        0.05188410356640816,
+        0.04707540571689606,
+        0.04555674269795418,
+        0.0438058115541935,
+        0.04254459589719772,
+        0.03927430137991905,
+        0.03777526691555977
+      ],
+      "k_sweep": [
+        {
+          "k": 2,
+          "silhouette": 0.3587067425251007,
+          "ami": {
+            "char_idx": -0.0014685743370415135,
+            "obj_idx": -0.0010160005330431081,
+            "query_pair": 0.01112146608180325,
+            "is_unknown": 0.014294270360196535,
+            "state_idx": 0.007880798619889544
+          }
+        },
+        {
+          "k": 3,
+          "silhouette": 0.3004149794578552,
+          "ami": {
+            "char_idx": 0.004271081064578615,
+            "obj_idx": -0.0016627103638015806,
+            "query_pair": 0.03558917139013346,
+            "is_unknown": 0.0363621253938671,
+            "state_idx": 0.026458917878953204
+          }
+        },
+        {
+          "k": 4,
+          "silhouette": 0.22237956523895264,
+          "ami": {
+            "char_idx": -0.003999623119357483,
+            "obj_idx": -0.0035419022511182234,
+            "query_pair": 0.15500702565435603,
+            "is_unknown": 0.23208972016719384,
+            "state_idx": 0.18546438850251992
+          }
+        },
+        {
+          "k": 5,
+          "silhouette": 0.20203173160552979,
+          "ami": {
+            "char_idx": -0.0018748958999914196,
+            "obj_idx": -0.0031328277125884985,
+            "query_pair": 0.12143644419964365,
+            "is_unknown": 0.1634351280984611,
+            "state_idx": 0.1355486901062293
+          }
+        },
+        {
+          "k": 6,
+          "silhouette": 0.25890788435935974,
+          "ami": {
+            "char_idx": -0.0021201884146133942,
+            "obj_idx": -0.0009144065573362675,
+            "query_pair": 0.11805287156761707,
+            "is_unknown": 0.16591007556838938,
+            "state_idx": 0.1373639674363229
+          }
+        },
+        {
+          "k": 7,
+          "silhouette": 0.19502300024032593,
+          "ami": {
+            "char_idx": 0.03684286835487918,
+            "obj_idx": 0.06368951009519912,
+            "query_pair": 0.18643219328496538,
+            "is_unknown": 0.15427738395493593,
+            "state_idx": 0.13130223302733002
+          }
+        },
+        {
+          "k": 8,
+          "silhouette": 0.2666739523410797,
+          "ami": {
+            "char_idx": -0.0024696365818927747,
+            "obj_idx": 0.0008370897424159325,
+            "query_pair": 0.14055626110080202,
+            "is_unknown": 0.1809009859119824,
+            "state_idx": 0.1540819125235832
+          }
+        }
+      ],
+      "best_k": 2,
+      "best_silhouette": 0.3587067425251007,
+      "best_cluster_ami": {
+        "char_idx": -0.0014685743370415135,
+        "obj_idx": -0.0010160005330431081,
+        "query_pair": 0.01112146608180325,
+        "is_unknown": 0.014294270360196535,
+        "state_idx": 0.007880798619889544
+      },
+      "clusters": [
+        {
+          "cluster": 0,
+          "n": 15,
+          "distributions": {
+            "char_idx": {
+              "1": 9,
+              "0": 6
+            },
+            "obj_idx": {
+              "0": 9,
+              "1": 6
+            },
+            "query_pair": {
+              "0": 6,
+              "3": 6,
+              "2": 3
+            },
+            "is_unknown": {
+              "0": 12,
+              "1": 3
+            },
+            "state_idx": {
+              "0": 6,
+              "1": 6,
+              "-1": 3
+            },
+            "target_state": {
+              "champagne": 12,
+              "unknown": 3
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 3,
+              "question": "What does Dean believe the pitcher contains?",
+              "queried_character": "Dean",
+              "queried_object": "pitcher",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 11,
+              "question": "What does Chad believe the bottle contains?",
+              "queried_character": "Chad",
+              "queried_object": "bottle",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 100,
+              "question": "What does Linda believe the glass contains?",
+              "queried_character": "Linda",
+              "queried_object": "glass",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 182,
+              "question": "What does Josh believe the can contains?",
+              "queried_character": "Josh",
+              "queried_object": "can",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 196,
+              "question": "What does Adam believe the pint contains?",
+              "queried_character": "Adam",
+              "queried_object": "pint",
+              "target_state": "champagne"
+            }
+          ]
+        },
+        {
+          "cluster": 1,
+          "n": 385,
+          "distributions": {
+            "char_idx": {
+              "1": 194,
+              "0": 191
+            },
+            "obj_idx": {
+              "1": 196,
+              "0": 189
+            },
+            "query_pair": {
+              "1": 99,
+              "3": 97,
+              "2": 97,
+              "0": 92
+            },
+            "is_unknown": {
+              "1": 196,
+              "0": 189
+            },
+            "state_idx": {
+              "-1": 196,
+              "1": 97,
+              "0": 92
+            },
+            "target_state": {
+              "unknown": 196,
+              "wine": 15,
+              "beer": 13,
+              "stout": 12,
+              "monster": 11,
+              "bourbon": 11,
+              "cocoa": 10,
+              "sprite": 10,
+              "float": 9,
+              "soda": 9
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 0,
+              "question": "What does Charlie believe the jar contains?",
+              "queried_character": "Charlie",
+              "queried_object": "jar",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 1,
+              "question": "What does Heidi believe the cup contains?",
+              "queried_character": "Heidi",
+              "queried_object": "cup",
+              "target_state": "tea"
+            },
+            {
+              "sample_idx": 2,
+              "question": "What does Anna believe the tank contains?",
+              "queried_character": "Anna",
+              "queried_object": "tank",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 4,
+              "question": "What does Kevin believe the mug contains?",
+              "queried_character": "Kevin",
+              "queried_object": "mug",
+              "target_state": "beer"
+            },
+            {
+              "sample_idx": 5,
+              "question": "What does Oscar believe the cup contains?",
+              "queried_character": "Oscar",
+              "queried_object": "cup",
+              "target_state": "unknown"
+            }
+          ]
+        }
+      ],
+      "paths": {
+        "features": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/payload/dcm_features.npy",
+        "pca_points": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/payload/pca_points.csv",
+        "cluster_assignments": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/payload/cluster_assignments.csv",
+        "plot": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/payload/pca_clusters.png"
+      }
+    },
+    "both": {
+      "n_samples": 400,
+      "n_features": 342,
+      "pca_components": 10,
+      "explained_variance_ratio": [
+        0.2172570526599884,
+        0.046846408396959305,
+        0.04286806285381317,
+        0.03935733065009117,
+        0.03764864802360535,
+        0.03312824293971062,
+        0.030528565868735313,
+        0.02993471920490265,
+        0.027769124135375023,
+        0.02722219191491604
+      ],
+      "k_sweep": [
+        {
+          "k": 2,
+          "silhouette": 0.378325879573822,
+          "ami": {
+            "char_idx": -0.0008708456847273141,
+            "obj_idx": 0.0007432275629375597,
+            "query_pair": 0.5567917920880712,
+            "is_unknown": 0.8243624761761903,
+            "state_idx": 0.6579160550385805
+          }
+        },
+        {
+          "k": 3,
+          "silhouette": 0.3329584002494812,
+          "ami": {
+            "char_idx": 0.3823228739910924,
+            "obj_idx": 0.2731104243675103,
+            "query_pair": 0.747242326595452,
+            "is_unknown": 0.658747285143568,
+            "state_idx": 0.8488441444924837
+          }
+        },
+        {
+          "k": 4,
+          "silhouette": 0.2388802319765091,
+          "ami": {
+            "char_idx": 0.5155728555424711,
+            "obj_idx": 0.4230925075010087,
+            "query_pair": 0.8049929575791462,
+            "is_unknown": 0.5565797672599874,
+            "state_idx": 0.7359695720733005
+          }
+        },
+        {
+          "k": 5,
+          "silhouette": 0.25772055983543396,
+          "ami": {
+            "char_idx": 0.44533638123167435,
+            "obj_idx": 0.44361334530183943,
+            "query_pair": 0.7753477422860096,
+            "is_unknown": 0.5278510466219983,
+            "state_idx": 0.7145968084119213
+          }
+        },
+        {
+          "k": 6,
+          "silhouette": 0.2631376385688782,
+          "ami": {
+            "char_idx": 0.3698436254039483,
+            "obj_idx": 0.31233760016478,
+            "query_pair": 0.6742298587728252,
+            "is_unknown": 0.49516514060736944,
+            "state_idx": 0.5995334210464779
+          }
+        },
+        {
+          "k": 7,
+          "silhouette": 0.2815861999988556,
+          "ami": {
+            "char_idx": 0.1604945433194695,
+            "obj_idx": 0.16207248275087507,
+            "query_pair": 0.5038067051734463,
+            "is_unknown": 0.47386964924455566,
+            "state_idx": 0.41189684777476954
+          }
+        },
+        {
+          "k": 8,
+          "silhouette": 0.2957427203655243,
+          "ami": {
+            "char_idx": 0.3072671463746767,
+            "obj_idx": 0.3027674501014527,
+            "query_pair": 0.6186928799856836,
+            "is_unknown": 0.4618693623296044,
+            "state_idx": 0.546572477797331
+          }
+        }
+      ],
+      "best_k": 2,
+      "best_silhouette": 0.378325879573822,
+      "best_cluster_ami": {
+        "char_idx": -0.0008708456847273141,
+        "obj_idx": 0.0007432275629375597,
+        "query_pair": 0.5567917920880712,
+        "is_unknown": 0.8243624761761903,
+        "state_idx": 0.6579160550385805
+      },
+      "clusters": [
+        {
+          "cluster": 0,
+          "n": 186,
+          "distributions": {
+            "char_idx": {
+              "1": 98,
+              "0": 88
+            },
+            "obj_idx": {
+              "0": 98,
+              "1": 88
+            },
+            "query_pair": {
+              "2": 98,
+              "1": 88
+            },
+            "is_unknown": {
+              "1": 186
+            },
+            "state_idx": {
+              "-1": 186
+            },
+            "target_state": {
+              "unknown": 186
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 5,
+              "question": "What does Oscar believe the cup contains?",
+              "queried_character": "Oscar",
+              "queried_object": "cup",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 7,
+              "question": "What does Carl believe the flask contains?",
+              "queried_character": "Carl",
+              "queried_object": "flask",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 10,
+              "question": "What does Grace believe the can contains?",
+              "queried_character": "Grace",
+              "queried_object": "can",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 14,
+              "question": "What does Rose believe the quart contains?",
+              "queried_character": "Rose",
+              "queried_object": "quart",
+              "target_state": "unknown"
+            },
+            {
+              "sample_idx": 15,
+              "question": "What does Lee believe the glass contains?",
+              "queried_character": "Lee",
+              "queried_object": "glass",
+              "target_state": "unknown"
+            }
+          ]
+        },
+        {
+          "cluster": 1,
+          "n": 214,
+          "distributions": {
+            "char_idx": {
+              "0": 109,
+              "1": 105
+            },
+            "obj_idx": {
+              "1": 114,
+              "0": 100
+            },
+            "query_pair": {
+              "3": 103,
+              "0": 98,
+              "1": 11,
+              "2": 2
+            },
+            "is_unknown": {
+              "0": 201,
+              "1": 13
+            },
+            "state_idx": {
+              "1": 103,
+              "0": 98,
+              "-1": 13
+            },
+            "target_state": {
+              "wine": 15,
+              "beer": 13,
+              "unknown": 13,
+              "champagne": 12,
+              "stout": 12,
+              "monster": 11,
+              "bourbon": 11,
+              "cocoa": 10,
+              "sprite": 10,
+              "float": 9
+            }
+          },
+          "examples": [
+            {
+              "sample_idx": 0,
+              "question": "What does Charlie believe the jar contains?",
+              "queried_character": "Charlie",
+              "queried_object": "jar",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 1,
+              "question": "What does Heidi believe the cup contains?",
+              "queried_character": "Heidi",
+              "queried_object": "cup",
+              "target_state": "tea"
+            },
+            {
+              "sample_idx": 2,
+              "question": "What does Anna believe the tank contains?",
+              "queried_character": "Anna",
+              "queried_object": "tank",
+              "target_state": "wine"
+            },
+            {
+              "sample_idx": 3,
+              "question": "What does Dean believe the pitcher contains?",
+              "queried_character": "Dean",
+              "queried_object": "pitcher",
+              "target_state": "champagne"
+            },
+            {
+              "sample_idx": 4,
+              "question": "What does Kevin believe the mug contains?",
+              "queried_character": "Kevin",
+              "queried_object": "mug",
+              "target_state": "beer"
+            }
+          ]
+        }
+      ],
+      "paths": {
+        "features": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/both/dcm_features.npy",
+        "pca_points": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/both/pca_points.csv",
+        "cluster_assignments": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/both/cluster_assignments.csv",
+        "plot": "/vol/results/dcm_pca_clusters/full_dcm_svd_n80_lr0p1_n400_active_layers/both/pca_clusters.png"
+      }
+    }
+  }
+}

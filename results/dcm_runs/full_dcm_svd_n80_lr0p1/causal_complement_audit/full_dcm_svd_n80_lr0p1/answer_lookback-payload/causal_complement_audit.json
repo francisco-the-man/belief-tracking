@@ -1,0 +1,268 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "experiment": "answer_lookback-payload",
+  "source_svd_tag": "svd_n80",
+  "result_tag": "full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1",
+  "train_size": 80,
+  "validation_size": 80,
+  "batch_size": 4,
+  "seed": 0,
+  "position": -1,
+  "intervention_modes": {
+    "v_only": "dcm_sub_iia",
+    "v_orth_only": "dcm_complement_iia",
+    "full_residual": "dcm_full_iia"
+  },
+  "rows": [
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 0,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/0.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/0.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 2,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/2.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/2.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 4,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/4.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/4.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 6,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/6.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/6.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 8,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/8.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/8.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 10,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/10.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/10.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 12,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/12.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/12.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 14,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/14.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/14.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 16,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/16.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/16.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 18,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/18.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/18.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 20,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/20.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/20.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 22,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/22.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/22.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 24,
+      "rank": 0.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/24.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/24.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 26,
+      "rank": 1.0,
+      "dcm_full_iia": 0.0,
+      "dcm_sub_iia": 0.0,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/26.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/26.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 28,
+      "rank": 2.0,
+      "dcm_full_iia": 0.025,
+      "dcm_sub_iia": 0.025,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/28.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/28.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 30,
+      "rank": 2.0,
+      "dcm_full_iia": 0.075,
+      "dcm_sub_iia": 0.05,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/30.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/30.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 32,
+      "rank": 3.0,
+      "dcm_full_iia": 0.0625,
+      "dcm_sub_iia": 0.075,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/32.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/32.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 34,
+      "rank": 4.0,
+      "dcm_full_iia": 0.0625,
+      "dcm_sub_iia": 0.0875,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/34.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/34.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 36,
+      "rank": 21.0,
+      "dcm_full_iia": 0.1875,
+      "dcm_sub_iia": 0.1625,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/36.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/36.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 38,
+      "rank": 24.0,
+      "dcm_full_iia": 0.2,
+      "dcm_sub_iia": 0.2,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/38.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/38.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 40,
+      "rank": 28.0,
+      "dcm_full_iia": 0.3875,
+      "dcm_sub_iia": 0.2875,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 42,
+      "rank": 26.0,
+      "dcm_full_iia": 0.8625,
+      "dcm_sub_iia": 0.65,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 44,
+      "rank": 26.0,
+      "dcm_full_iia": 0.975,
+      "dcm_sub_iia": 0.85,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 46,
+      "rank": 32.0,
+      "dcm_full_iia": 1.0,
+      "dcm_sub_iia": 0.95,
+      "dcm_complement_iia": 0.0,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 47,
+      "rank": 38.0,
+      "dcm_full_iia": 1.0,
+      "dcm_sub_iia": 0.6125,
+      "dcm_complement_iia": 0.0125,
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/47.pt"
+    }
+  ]
+}

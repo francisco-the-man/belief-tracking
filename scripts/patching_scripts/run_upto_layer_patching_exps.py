@@ -133,14 +133,14 @@ def validate(
                     for layer in range(0, layer_idx + 1):
                         for t in interesting_positions:
                             alt_acts[layer][t] = (
-                                lm.model.layers[layer].output[:, t].clone()
+                                lm.model.layers[layer].output[0][:, t].clone()
                             )
 
                 with tracer.invoke(org_prompts):
                     for layer in range(0, lm.config.num_hidden_layers):
                         for t in interesting_positions:
                             org_acts[layer][t] = (
-                                lm.model.layers[layer].output[:, t].clone()
+                                lm.model.layers[layer].output[0][:, t].clone()
                             )
 
                 with tracer.invoke(org_prompts):
@@ -155,12 +155,12 @@ def validate(
                                 projection = projections[layer].to(device=device_p)
                         if exp_name == "object_position":
                             for t in reversed_charac_indices:
-                                lm.model.layers[layer].output[:, t] = alt_acts[
+                                lm.model.layers[layer].output[0][:, t] = alt_acts[
                                     layer
                                 ][patch_to_cache_map[t]]
 
                         for t in patch_indices[exp_name]:
-                            curr_output = lm.model.layers[layer].output[:, t].clone()
+                            curr_output = lm.model.layers[layer].output[0][:, t].clone()
                             if projections is not None:
                                 if is_mixed_projections(exp_name):
                                     if t in charac_indices:
@@ -180,17 +180,17 @@ def validate(
                             else:
                                 patch = alt_acts[layer][patch_to_cache_map[t]]
 
-                            lm.model.layers[layer].output[:, t] = patch
+                            lm.model.layers[layer].output[0][:, t] = patch
 
                         for t in retain_upto_indices[exp_name]:
-                            lm.model.layers[layer].output[:, t] = org_acts[layer][t]
+                            lm.model.layers[layer].output[0][:, t] = org_acts[layer][t]
 
                     for layer in range(lm.config.num_hidden_layers):
                         for t in retain_full_indices[exp_name]:
                             # if not restore_state:
                             #     if t in state_indices:
                             #         continue
-                            lm.model.layers[layer].output[:, t] = org_acts[layer][t]
+                            lm.model.layers[layer].output[0][:, t] = org_acts[layer][t]
 
                     logits = lm.lm_head.output[:, -1]
                     logits = logits.save() if return_logits else logits
@@ -320,21 +320,21 @@ def get_low_rank_projection(
                     for layer in range(0, layer_idx + 1):
                         for t in interesting_positions:
                             alt_acts[layer][t] = (
-                                lm.model.layers[layer].output[:, t].clone()
+                                lm.model.layers[layer].output[0][:, t].clone()
                             )
 
                 with tracer.invoke(org_prompts):
                     for layer in range(0, lm.config.num_hidden_layers):
                         for t in interesting_positions:
                             org_acts[layer][t] = (
-                                lm.model.layers[layer].output[:, t].clone()
+                                lm.model.layers[layer].output[0][:, t].clone()
                             )
 
                 with tracer.invoke(org_prompts):
                     for layer in range(0, layer_idx + 1):
                         if exp_name == "object_position":
                             for t in reversed_charac_indices:
-                                lm.model.layers[layer].output[:, t] = alt_acts[
+                                lm.model.layers[layer].output[0][:, t] = alt_acts[
                                     layer
                                 ][patch_to_cache_map[t]]
 
@@ -366,23 +366,23 @@ def get_low_rank_projection(
                             else:
                                 proj = projection
 
-                            curr_output = lm.model.layers[layer].output[:, t].clone()
+                            curr_output = lm.model.layers[layer].output[0][:, t].clone()
                             alt_proj = torch.matmul(
                                 alt_acts[layer][patch_to_cache_map[t]], proj
                             )
                             org_proj = torch.matmul(curr_output, proj)
                             patch = curr_output - org_proj + alt_proj
-                            lm.model.layers[layer].output[:, t] = patch
+                            lm.model.layers[layer].output[0][:, t] = patch
 
                         for t in retain_upto_indices[exp_name]:
-                            lm.model.layers[layer].output[:, t] = org_acts[layer][t]
+                            lm.model.layers[layer].output[0][:, t] = org_acts[layer][t]
 
                     for layer in range(lm.config.num_hidden_layers):
                         for t in retain_full_indices[exp_name]:
                             if not restore_state:
                                 if t in state_indices:
                                     continue
-                            lm.model.layers[layer].output[:, t] = org_acts[layer][t]
+                            lm.model.layers[layer].output[0][:, t] = org_acts[layer][t]
 
                     logits = lm.lm_head.output[:, -1].save()
 
@@ -691,7 +691,7 @@ def main(
         lm = LanguageModel(
             model_key,
             device_map="auto",
-            dtype=torch.float16 if "meta-llama/Meta-Llama-3-70B-Instruct" in model_key else torch.float32,
+            torch_dtype=torch.float16 if "meta-llama/Meta-Llama-3-70B-Instruct" in model_key else torch.float32,
             dispatch=True,
         )
 

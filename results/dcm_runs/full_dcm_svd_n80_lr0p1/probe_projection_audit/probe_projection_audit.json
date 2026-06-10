@@ -1,0 +1,1644 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "source_svd_tag": "svd_n80",
+  "pointer_result_tag": "full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2",
+  "payload_result_tag": "full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1",
+  "n_samples": 500,
+  "batch_size": 8,
+  "seed": 42,
+  "probe_seed": 0,
+  "pca_dim": 200,
+  "position": -1,
+  "label_mapping": {
+    "pointer_lamb0p2": "state_idx_when_known",
+    "payload_lamb0p1": "query_pair"
+  },
+  "rows": [
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 0,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.45161290322580644,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.45161290322580644,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/0.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/0.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 2,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.4838709677419355,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.4838709677419355,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/2.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/2.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 4,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.967741935483871,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.967741935483871,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/4.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/4.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 6,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.9838709677419355,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.9838709677419355,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/6.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/6.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 8,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.967741935483871,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.967741935483871,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/8.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/8.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 10,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/10.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/10.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 12,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/12.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/12.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 14,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/14.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/14.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 16,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/16.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/16.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 18,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/18.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/18.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 20,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/20.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/20.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 22,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/22.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/22.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 24,
+      "probe_variable": "state_idx_when_known",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.5141700404858299,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/24.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/24.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 26,
+      "probe_variable": "state_idx_when_known",
+      "rank": 1.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 0.7419354838709677,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/26.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/26.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 28,
+      "probe_variable": "state_idx_when_known",
+      "rank": 1.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 0.6935483870967742,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/28.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/28.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 30,
+      "probe_variable": "state_idx_when_known",
+      "rank": 3.0,
+      "dcm_full_rank_acc": 0.4,
+      "dcm_subspace_acc": 0.4125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 3
+      },
+      "probe_orth": {
+        "test_acc": 0.7903225806451613,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/30.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/30.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 32,
+      "probe_variable": "state_idx_when_known",
+      "rank": 2.0,
+      "dcm_full_rank_acc": 0.9875,
+      "dcm_subspace_acc": 0.9625,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 2
+      },
+      "probe_orth": {
+        "test_acc": 0.8548387096774194,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/32.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/32.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 34,
+      "probe_variable": "state_idx_when_known",
+      "rank": 2.0,
+      "dcm_full_rank_acc": 0.9875,
+      "dcm_subspace_acc": 0.9625,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 2
+      },
+      "probe_orth": {
+        "test_acc": 0.8064516129032258,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/34.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/34.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 36,
+      "probe_variable": "state_idx_when_known",
+      "rank": 10.0,
+      "dcm_full_rank_acc": 0.9,
+      "dcm_subspace_acc": 0.5,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 10
+      },
+      "probe_orth": {
+        "test_acc": 0.8387096774193549,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/36.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/36.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 38,
+      "probe_variable": "state_idx_when_known",
+      "rank": 11.0,
+      "dcm_full_rank_acc": 0.375,
+      "dcm_subspace_acc": 0.1875,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 11
+      },
+      "probe_orth": {
+        "test_acc": 0.7903225806451613,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/38.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/38.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 40,
+      "probe_variable": "state_idx_when_known",
+      "rank": 9.0,
+      "dcm_full_rank_acc": 0.2,
+      "dcm_subspace_acc": 0.1125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 9
+      },
+      "probe_orth": {
+        "test_acc": 0.8064516129032258,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 42,
+      "probe_variable": "state_idx_when_known",
+      "rank": 9.0,
+      "dcm_full_rank_acc": 0.0125,
+      "dcm_subspace_acc": 0.0125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 9
+      },
+      "probe_orth": {
+        "test_acc": 0.7903225806451613,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 44,
+      "probe_variable": "state_idx_when_known",
+      "rank": 7.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 7
+      },
+      "probe_orth": {
+        "test_acc": 0.7580645161290323,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 46,
+      "probe_variable": "state_idx_when_known",
+      "rank": 7.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.8064516129032258,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 7
+      },
+      "probe_orth": {
+        "test_acc": 0.8548387096774194,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "subspace": "pointer_lamb0p2",
+      "experiment": "answer_lookback-pointer",
+      "anchor_layer": 47,
+      "probe_variable": "state_idx_when_known",
+      "rank": 6.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "probe_proj": {
+        "test_acc": 0.7580645161290323,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 6
+      },
+      "probe_orth": {
+        "test_acc": 0.9193548387096774,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_pointer_lamb0p2/lamb_0p2/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/pointer/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-pointer/causalToM/last_token/singular_vecs/47.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 0,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.296,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.296,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/0.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/0.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 2,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.288,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.288,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/2.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/2.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 4,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.656,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.656,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/4.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/4.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 6,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.648,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.648,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/6.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/6.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 8,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.704,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.704,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/8.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/8.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 10,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.84,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.84,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/10.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/10.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 12,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.912,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.912,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/12.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/12.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 14,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.96,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.96,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/14.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/14.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 16,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.984,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.984,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/16.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/16.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 18,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/18.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/18.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 20,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/20.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/20.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 22,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/22.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/22.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 24,
+      "probe_variable": "query_pair",
+      "rank": 0.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.254,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 0,
+        "note": "rank_zero_projection"
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/24.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/24.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 26,
+      "probe_variable": "query_pair",
+      "rank": 1.0,
+      "dcm_full_rank_acc": 0.0,
+      "dcm_subspace_acc": 0.0,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.616,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 1
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/26.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/26.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 28,
+      "probe_variable": "query_pair",
+      "rank": 2.0,
+      "dcm_full_rank_acc": 0.025,
+      "dcm_subspace_acc": 0.025,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.944,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 2
+      },
+      "probe_orth": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/28.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/28.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 30,
+      "probe_variable": "query_pair",
+      "rank": 2.0,
+      "dcm_full_rank_acc": 0.075,
+      "dcm_subspace_acc": 0.05,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.936,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 2
+      },
+      "probe_orth": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/30.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/30.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 32,
+      "probe_variable": "query_pair",
+      "rank": 3.0,
+      "dcm_full_rank_acc": 0.0625,
+      "dcm_subspace_acc": 0.075,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.952,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 3
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/32.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/32.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 34,
+      "probe_variable": "query_pair",
+      "rank": 4.0,
+      "dcm_full_rank_acc": 0.0625,
+      "dcm_subspace_acc": 0.0875,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.936,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 4
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/34.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/34.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 36,
+      "probe_variable": "query_pair",
+      "rank": 21.0,
+      "dcm_full_rank_acc": 0.1875,
+      "dcm_subspace_acc": 0.1625,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.968,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 21
+      },
+      "probe_orth": {
+        "test_acc": 0.912,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/36.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/36.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 38,
+      "probe_variable": "query_pair",
+      "rank": 24.0,
+      "dcm_full_rank_acc": 0.2,
+      "dcm_subspace_acc": 0.2,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.984,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 24
+      },
+      "probe_orth": {
+        "test_acc": 0.904,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/38.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/38.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 40,
+      "probe_variable": "query_pair",
+      "rank": 28.0,
+      "dcm_full_rank_acc": 0.3875,
+      "dcm_subspace_acc": 0.2875,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.976,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 28
+      },
+      "probe_orth": {
+        "test_acc": 0.856,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 42,
+      "probe_variable": "query_pair",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.8625,
+      "dcm_subspace_acc": 0.65,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.976,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 26
+      },
+      "probe_orth": {
+        "test_acc": 0.88,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 44,
+      "probe_variable": "query_pair",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.975,
+      "dcm_subspace_acc": 0.85,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.976,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 26
+      },
+      "probe_orth": {
+        "test_acc": 0.864,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 46,
+      "probe_variable": "query_pair",
+      "rank": 32.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.95,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.936,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 32
+      },
+      "probe_orth": {
+        "test_acc": 0.848,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 47,
+      "probe_variable": "query_pair",
+      "rank": 38.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.6125,
+      "probe_full": {
+        "test_acc": 0.992,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "probe_proj": {
+        "test_acc": 0.936,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 38
+      },
+      "probe_orth": {
+        "test_acc": 0.896,
+        "baseline": 0.254,
+        "n": 500,
+        "n_classes": 4,
+        "pca_dim": 200
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/47.pt"
+    }
+  ]
+}

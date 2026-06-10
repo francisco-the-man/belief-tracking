@@ -1,0 +1,784 @@
+{
+  "model_key": "Qwen/Qwen2.5-14B-Instruct",
+  "source_svd_tag": "svd_n80",
+  "payload_result_tag": "full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1",
+  "n_samples": 500,
+  "batch_size": 8,
+  "seed": 42,
+  "probe_seed": 0,
+  "pca_dim": 200,
+  "position": -1,
+  "target_state_metadata": {
+    "target_to_class": {
+      "wine": 0,
+      "champagne": 1,
+      "stout": 2,
+      "beer": 3,
+      "tea": 4,
+      "monster": 5,
+      "soda": 6,
+      "cocoa": 7,
+      "espresso": 8,
+      "bourbon": 9,
+      "sprite": 10,
+      "port": 11
+    },
+    "class_to_target": {
+      "0": "wine",
+      "1": "champagne",
+      "2": "stout",
+      "3": "beer",
+      "4": "tea",
+      "5": "monster",
+      "6": "soda",
+      "7": "cocoa",
+      "8": "espresso",
+      "9": "bourbon",
+      "10": "sprite",
+      "11": "port"
+    },
+    "all_known_target_counts": {
+      "wine": 17,
+      "champagne": 16,
+      "stout": 14,
+      "beer": 13,
+      "tea": 12,
+      "monster": 12,
+      "soda": 12,
+      "cocoa": 12,
+      "espresso": 12,
+      "bourbon": 12,
+      "sprite": 12,
+      "port": 11,
+      "ale": 10,
+      "juice": 10,
+      "gin": 10,
+      "cocktail": 9,
+      "float": 9,
+      "milk": 9,
+      "punch": 8,
+      "coffee": 8,
+      "water": 7,
+      "rum": 7,
+      "porter": 5
+    },
+    "target_top_k": 12,
+    "target_min_count": 5
+  },
+  "rows": [
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 40,
+      "probe_variable": "state_idx_when_known",
+      "rank": 28.0,
+      "dcm_full_rank_acc": 0.3875,
+      "dcm_subspace_acc": 0.2875,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 28,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.8709677419354839,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 42,
+      "probe_variable": "state_idx_when_known",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.8625,
+      "dcm_subspace_acc": 0.65,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 26,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.9516129032258065,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 44,
+      "probe_variable": "state_idx_when_known",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.975,
+      "dcm_subspace_acc": 0.85,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 26,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.9516129032258065,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 46,
+      "probe_variable": "state_idx_when_known",
+      "rank": 32.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.95,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 32,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.9354838709677419,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 47,
+      "probe_variable": "state_idx_when_known",
+      "rank": 38.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.6125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 38,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.9516129032258065,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/47.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": "concat",
+      "probe_variable": "state_idx_when_known",
+      "rank": 150,
+      "layers": [
+        40,
+        42,
+        44,
+        46,
+        47
+      ],
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 150,
+        "class_counts": [
+          120,
+          127
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.967741935483871,
+        "baseline": 0.5141700404858299,
+        "n": 247,
+        "n_classes": 2,
+        "pca_dim": 184,
+        "class_counts": [
+          120,
+          127
+        ]
+      }
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 40,
+      "probe_variable": "target_state_known_topk",
+      "rank": 28.0,
+      "dcm_full_rank_acc": 0.3875,
+      "dcm_subspace_acc": 0.2875,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 28,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/40.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/40.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 42,
+      "probe_variable": "target_state_known_topk",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.8625,
+      "dcm_subspace_acc": 0.65,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 26,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/42.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/42.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 44,
+      "probe_variable": "target_state_known_topk",
+      "rank": 26.0,
+      "dcm_full_rank_acc": 0.975,
+      "dcm_subspace_acc": 0.85,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 26,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/44.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/44.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 46,
+      "probe_variable": "target_state_known_topk",
+      "rank": 32.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.95,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 32,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 0.9743589743589743,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/46.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/46.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": 47,
+      "probe_variable": "target_state_known_topk",
+      "rank": 38.0,
+      "dcm_full_rank_acc": 1.0,
+      "dcm_subspace_acc": 0.6125,
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 38,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "dcm_path": "/vol/results/full_dcm_svd_n80_lr0p1_payload_lamb0p1/lamb_0p1/causalToM_novis/Qwen2.5-14B-Instruct/answer_lookback/payload/47.json",
+      "basis_path": "/vol/svd_snapshots/svd_n80/answer_lookback-payload/causalToM/last_token/singular_vecs/47.pt"
+    },
+    {
+      "subspace": "payload_lamb0p1",
+      "experiment": "answer_lookback-payload",
+      "anchor_layer": "concat",
+      "probe_variable": "target_state_known_topk",
+      "rank": 150,
+      "layers": [
+        40,
+        42,
+        44,
+        46,
+        47
+      ],
+      "probe_full": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_proj": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      },
+      "probe_orth": {
+        "test_acc": 1.0,
+        "baseline": 0.10967741935483871,
+        "n": 155,
+        "n_classes": 12,
+        "pca_dim": 115,
+        "class_counts": [
+          17,
+          16,
+          14,
+          13,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          11
+        ]
+      }
+    }
+  ]
+}
